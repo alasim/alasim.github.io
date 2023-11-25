@@ -9,10 +9,22 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class="py-2 flex flex-col space-y-0">
+      <text class="text-lg">
+        I am Hasan Al Asim, a seasoned professional with over three years of
+        diverse experience in software development. My journey in the tech realm
+        has been marked by a passion for crafting innovative solutions and a
+        commitment to pushing the boundaries of what's possible in the digital
+        landscape.
+      </text>
+      <text class="text-lg">
+        In my role, I bring not just technical proficiency but also a creative
+        vision that elevates projects to new heights. I am excited about the
+        prospect of leveraging my skills and experience to drive impactful
+        results and contribute to the ever-evolving landscape of software
+        development.
+      </text>
+    </div>
   </div>
 
   <div class="mb-5">
@@ -20,14 +32,34 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
+    <!-- <TimeLineElement
+      title="Bangladesh Youth Leadership Center (BYLC), 2021"
+      subtitle={``}
+    >
+      <ul class="list-disc ml-5">
+        <li>
+          Graduated from the Bangladesh Youth Leadership Center, a prestigious
+          institution fostering leadership and professional development.
+        </li>
+        <li>
+          Completed a comprehensive program emphasizing leadership skills,
+          strategic thinking, and effective communication.
+        </li>
+        <li>
+          Engaged in coursework that provided a strong foundation in ethical
+          leadership and community impact.
+        </li>
+      </ul>
+    </TimeLineElement> -->
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+      title="Bachelor of Science in Computer Science"
+      subtitle="International University of Business Agriculture and Technology (IUBAT), Dhaka, Bangladesh"
+    >
+      <ul class="list-disc ml-5">
+        <li>Currently pursuing a BSE in Computer Science at IUBAT.</li>
+        <li>Expected graduation in 2025.</li>
+      </ul>
+    </TimeLineElement>
   </div>
 
   <div class="mb-5">
@@ -36,22 +68,33 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="User Experience Designer"
+      subtitle="From 2019 at ReShop · Dhaka, Bangladesh"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Embarked on my professional journey as a Junior UX Designer at ReShop.
+      Contributed to enhancing user interactions and interfaces, gaining
+      valuable experience in user-centric design principles. Collaborated within
+      a dynamic team environment, laying the foundation for my evolving career
+      in software development.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Full Stack Developer"
+      subtitle="From 2019 to 2022 at Softenin · Dhaka, Bangladesh"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      As a Full-Stack Developer at Softenin, I contributed to the end-to-end
+      development of a mobile application for a startup company that aims to
+      revolutionize the healthcare industry by providing an easy-to-use platform
+      for patients to access healthcare services online, demonstrating
+      proficiency in both frontend and backend technologies.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Chief Technology Officer, KLwebco"
+      subtitle={`From 2022 · Huntington, New York, United States`}
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      As CTO of KLwebco, I lead the technological vision and strategy,
+      overseeing software design, development, and architecture. Steering the
+      company through innovation, I drive the implementation of cutting-edge
+      solutions to achieve KLwebco's goals.
     </TimeLineElement>
   </div>
 
@@ -61,10 +104,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank">
+        Bangladesh Youth Leadership Center (BYLC), 2021</a
+      >
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank"> Member of BYLC Graduate Network (BGN)</a>
     </li>
   </ul>
 
@@ -72,21 +117,37 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-4 columns-2 mx-6">
+    <li>Bangla (Native)</li>
+    <li>English (Proficient)</li>
+    <li>JavaScript</li>
+    <li>C++</li>
+    <li>Flutter</li>
+    <li>Dart</li>
+    <li>Postgres SQL</li>
+    <li>MySQL</li>
+    <li>CSS</li>
+    <li>SASS</li>
+    <li>Node.js</li>
+    <li>React.js</li>
+    <li>Next.js</li>
+    <li>Prisma ORM</li>
+    <li>GraphQL</li>
+    <li>Astro</li>
+    <li>Taildwind</li>
+    <li>JQuery</li>
+    <li>Git</li>
+    <li>Jira</li>
+    <li>Scrum</li>
+    <li>UI Design</li>
+    <li>WEB Design</li>
+    <li>Software Architecture</li>
+    <li>Full-Stack Development</li>
+    <li>Mobile App Development</li>
+    <li>Web Development</li>
+    <li>Leadership</li>
+    <li>Project Management</li>
+    <li>Problem Solving</li>
+    <li>Team Collaboration</li>
   </ul>
 </BaseLayout>
