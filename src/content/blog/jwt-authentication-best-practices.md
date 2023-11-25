@@ -1,10 +1,9 @@
 ---
 title: "Best Practices for JWT Authentication Security"
 description: "In the dynamic world of web development, ensuring robust security is paramount, especially when it comes to user authentication."
-pubDate: "Sep 12 2022"
+pubDate: "Oct 09, 2023"
 heroImage: "https://res.cloudinary.com/alasim/image/upload/v1700916460/writings/tbifptyaul0jghsfd6ic.png"
-badge: "Demo badge"
-tags: ["rust","tokio"]
+tags: ["auth","jwt"]
 ---
 
 In the dynamic world of web development, ensuring robust security is paramount, especially when it comes to user authentication. JSON Web Tokens (JWT) have become a popular choice for managing authentication tokens, but with great power comes great responsibility. Here are the best practices to fortify your system and secure your authentication process using JWT.

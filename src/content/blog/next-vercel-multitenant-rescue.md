@@ -1,7 +1,7 @@
 ---
 title: "Rising from the Ashes: How Next.js and Vercel Rescued My Multitenant Project"
 description: "We've all been there—struggling with the complexities of multitenant applications, juggling the demands of various clients, and navigating the pitfalls of scalability and customization."
-pubDate: "Sep 11 2022"
+pubDate: "Aug 15 2023"
 heroImage: "https://res.cloudinary.com/alasim/image/upload/v1700915880/writings/iqt3ew0zq4pnz4kijkpx.png"
 
 ---

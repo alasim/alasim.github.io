@@ -1,9 +1,9 @@
 ---
 title: "A Journey into Static Site Generation"
 description: "In the ever-evolving landscape of web development, the choice of frameworks and tools can greatly impact the efficiency and capabilities of your projects."
-pubDate: "Sep 10 2022"
+pubDate: "Sep 10 2023"
 heroImage: "https://res.cloudinary.com/alasim/image/upload/s--r1qtfy-u--/c_scale,co_white,c_fit,l_text:Helvetica_64_bold:Exploring%20Next.js%20and%20Astro.js:%20A%20Journey%20into%20Static%20Site%20Generation,w_1000/fl_layer_apply,g_north_west,x_80,y_80/c_scale,h_720,w_1200/writings/hrxthuh9c3bermdikpf2.jpg"
-tags: ["tokio"]
+tags: ["next.js","astro.js"]
 ---
 
 In the ever-evolving landscape of web development, the choice of frameworks and tools can greatly impact the efficiency and capabilities of your projects. Recently, I embarked on a journey to explore two popular frameworks: Next.js and Astro.js. While Next.js is renowned for its robust solutions in complex web development, Astro.js caught my attention as a promising option for simpler static websites.
