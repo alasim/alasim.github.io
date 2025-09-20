@@ -1,75 +1,53 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import projectsData from "../data/projects.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const { projects, categories } = projectsData;
+
+// Filter only published projects and group by category
+const publishedProjects = projects.filter(
+  (project) => project.status === "published"
+);
+const projectsByCategory = publishedProjects.reduce(
+  (acc, project) => {
+    if (!acc[project.category]) {
+      acc[project.category] = [];
+    }
+    acc[project.category].push(project);
+    return acc;
+  },
+  {} as Record<string, typeof publishedProjects>
+);
 ---
 
 <BaseLayout title="Hasan Al Asim | Projects" sideBarActiveItemID="projects">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">SaaS</div>
-  </div>
+  {
+    Object.entries(projectsByCategory).map(
+      ([categoryKey, categoryProjects], categoryIndex) => (
+        <>
+          <div>
+            <div class="text-3xl w-full font-bold mb-5 mt-10">
+              {categories[categoryKey].title}
+            </div>
+          </div>
 
-  <HorizontalCard
-    title="Prumote - Digital Advertising Platform"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/prumote-shot-1.png"
-    desc="Prumote simplifies digital advertising with seamless content creation, media planning, and buying, revolutionizing the advertising landscape."
-    url="https://prumote.com/"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Timely - SaaS for Effortless Scheduling"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/er8pckwxmn3ugmebfniw.png"
-    desc="Timely streamlines scheduling operations with UX-driven design, seamless website development, and rigorous testing for reliability and efficiency."
-    url="https://trytimely.com/"
-  />
-  <HorizontalCard
-    title="Fantacy Snipper - SaaS for sports adventure"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/jynjbjlcupwkmd0cs3ms.png"
-    desc="A community where fans Connect with their team, Compete with other fans and Earn Rewards for demonstrating fan skill"
-    url="https://sniper-git-wd-61-final-retouch-compeletion-klwebco-auth.vercel.app/"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">
-      Web Development With Custom CMS
-    </div>
-  </div>
-
-  <HorizontalCard
-    title="Nicole Dennis-Benn - NY Times Bestselling Author"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/vmkw9jmhdos81cytwqlk.png"
-    desc="The website for Nicole Dennis-Benn, NY Times Bestselling Author, serves as an online platform to showcase her literary works, share her biography, connect with readers, and provide updates on her latest publications and events."
-    url="https://www.nicoledennisbenn.com/"
-    badge="Custom CMS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Morning Dew Therapy"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/kydqagygq8qfu7ydwc36.png"
-    desc="A website for therapeutic services, offering information, resources, and a platform for clients to connect with mental health professionals."
-    url="https://morningdewtherapy.com/"
-    badge="Custom CMS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="KLwebco.com"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/tirjheczvisidbo7vetj.png"
-    desc="Your destination for cutting-edge software solutions. Explore our portfolio, services, and let's transform ideas into digital realities."
-    url="https://klwebco.com/"
-    badge="Custom CMS"
-  />
-  <HorizontalCard
-    title="FHYF Community"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/fhyf-shot-1.png"
-    desc="Unveil fashion at its best. Shop our garment collection or explore our portfolio for a glimpse into our creative world."
-    url="https://www.fhyf.org/"
-    badge="Custom CMS"
-  />
-  <HorizontalCard
-    title="CRYY Website"
-    img="https://res.cloudinary.com/dfetbelr8/image/upload/w_1020/portfolios/projects/cryy-shot-1.png"
-    desc="CRYY has 10 years of experience in providing quality communication gadgets that are durable, and up-to-date to ensure that business owners get smooth interaction between employees and customers."
-    url="https://cryy.vercel.app/"
-    badge="UI with Next js"
-  />
+          {categoryProjects.map((project, projectIndex) => (
+            <>
+              <HorizontalCard
+                title={project.title}
+                img={project.image}
+                desc={project.description}
+                url={project.url}
+                badge={project.badge}
+              />
+              {projectIndex < categoryProjects.length - 1 && (
+                <div class="divider my-0" />
+              )}
+            </>
+          ))}
+        </>
+      )
+    )
+  }
 </BaseLayout>

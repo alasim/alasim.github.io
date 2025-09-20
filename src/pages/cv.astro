@@ -1,6 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import projectsData from "../data/projects.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Get recent published projects for CV
+const recentProjects = projectsData.projects
+  .filter((project) => project.featured && project.status === "published")
+  .sort((a, b) => b.year.localeCompare(a.year))
+  .slice(0, 6);
 ---
 
 <BaseLayout title="Hasan Al Asim | Resume" sideBarActiveItemID="cv">
@@ -11,18 +18,28 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <div class="mb-10 text-justify">
     <div class="py-2 flex flex-col space-y-0">
       <text class="text-lg">
-        I am Hasan Al Asim, a seasoned professional with over 4 years + of
-        diverse experience in software development. My journey in the tech realm
-        has been marked by a passion for crafting innovative solutions and a
-        commitment to pushing the boundaries of what's possible in the digital
-        landscape.
+        I’m a Full-Stack Developer with a passion for building scalable SaaS
+        platforms, CMS frameworks, and e-commerce solutions from the ground up.
+        My expertise spans <b
+          >React, Node.js, Prisma, Postgres, Python, AWS, and Linux,</b
+        > with strong experience in <b
+          >system design, DevOps automation, and performance optimization.</b
+        >
       </text>
       <text class="text-lg">
-        In my role, I bring not just technical proficiency but also a creative
-        vision that elevates projects to new heights. I am excited about the
-        prospect of leveraging my skills and experience to drive impactful
-        results and contribute to the ever-evolving landscape of software
-        development.
+        Over the years, I’ve developed and launched products like <b
+          >Manifestare</b
+        > (business suite), <b>AuthCMS</b> (AI-powered CMS), <b
+          >Fest Template Framework</b
+        > (my custom-built framework for editable and high-performance components),
+        <b>CommerceBee</b> (e-commerce solution), and <b>Prumote</b> (digital advertising
+        platform).
+      </text>
+      <text class="text-lg">
+        Beyond coding, I’ve led teams, mentored developers, and built automation
+        tools that improve collaboration and deployment workflows. I enjoy
+        solving complex technical challenges while turning ideas into impactful,
+        user-focused digital products.
       </text>
     </div>
   </div>
@@ -96,6 +113,32 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       company through innovation, I drive the implementation of cutting-edge
       solutions to achieve KLwebco's goals.
     </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Key Projects</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    {
+      recentProjects.map((project) => (
+        <TimeLineElement
+          title={project.title}
+          subtitle={`${project.year} · ${project.technologies.join(", ")}`}
+        >
+          <p class="text-justify">{project.description}</p>
+          <div class="mt-2">
+            <a
+              href={project.url}
+              target="_blank"
+              class="text-primary hover:underline"
+            >
+              View Project →
+            </a>
+          </div>
+        </TimeLineElement>
+      ))
+    }
   </div>
 
   <div class="mb-5">

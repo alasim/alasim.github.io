@@ -1,0 +1,234 @@
+{
+  "projects": [
+    {
+      "id": "manifestare",
+      "title": "Manifestare - Comprehensive Business Suite",
+      "description": "Architected and built from scratch a comprehensive business suite for small businesses, featuring CMS, analytics, event management, donations, email campaigns, social media posting, and a form builder. Designed for high performance and scalability to support continuous growth.",
+      "image": "/projects/manifestare-shot-1.png",
+      "url": "https://app.manifestare.com/",
+      "badge": "NEW",
+      "category": "business-saas",
+      "featured": true,
+      "status": "published",
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "AWS",
+        "Analytics",
+        "CMS"
+      ],
+      "year": "2024"
+    },
+    {
+      "id": "prumote",
+      "title": "Prumote - Digital Advertising Platform",
+      "description": "Developed from the ground up a digital advertising platform that simplifies ad creation, media planning, and buying with built-in analytics and user role management.",
+      "image": "/projects/prumote-shot-1.png",
+      "url": "https://prumote.com/",
+      "category": "business-saas",
+      "featured": true,
+      "status": "published",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Media Planning"],
+      "year": "2024"
+    },
+    {
+      "id": "authcms",
+      "title": "AuthCMS - AI-Powered CMS",
+      "description": "Designed and developed end-to-end an AI-powered CMS with advanced content editing, page and collection management, and a modular architecture for flexible layouts. Integrated performance best practices to ensure millisecond page loads.",
+      "image": "/projects/authcms-shot-1.png",
+      "url": "#",
+      "category": "cms-framework",
+      "featured": true,
+      "status": "published",
+      "technologies": [
+        "AI",
+        "CMS",
+        "React",
+        "Node.js",
+        "Performance Optimization"
+      ],
+      "year": "2024"
+    },
+    {
+      "id": "fest-template",
+      "title": "Fest Template Framework",
+      "description": "Created a custom framework that powers AuthCMS, enabling editable elements and dynamic rendering strategies for seamless, high-speed content delivery.",
+      "image": "/projects/fest-template-shot-1.png",
+      "url": "#",
+      "category": "cms-framework",
+      "featured": false,
+      "status": "published",
+      "technologies": [
+        "Framework",
+        "React",
+        "Dynamic Rendering",
+        "Performance"
+      ],
+      "year": "2024"
+    },
+    {
+      "id": "commercebee",
+      "title": "CommerceBee - Full-Stack E-commerce Solution",
+      "description": "Engineered a full-stack e-commerce solution with a no-code CMS, allowing stores to launch in minutes while achieving lightning-fast page rendering.",
+      "image": "/projects/commercepie-shot-1.png",
+      "url": "#",
+      "badge": "NEW",
+      "category": "ecommerce-community",
+      "featured": true,
+      "status": "published",
+      "technologies": [
+        "E-commerce",
+        "No-code CMS",
+        "React",
+        "Node.js",
+        "Performance"
+      ],
+      "year": "2024"
+    },
+    {
+      "id": "timely",
+      "title": "Timely - SaaS Scheduling Platform",
+      "description": "Built and deployed a SaaS scheduling platform that streamlines appointments and resource management with real-time updates and role-based access.",
+      "image": "/projects/timely-shot-1.png",
+      "url": "https://trytimely.com/",
+      "badge": "",
+      "category": "business-saas",
+      "featured": true,
+      "status": "published",
+      "technologies": ["SaaS", "Scheduling", "Real-time", "Role-based Access"],
+      "year": "2023"
+    },
+    {
+      "id": "fundfaster",
+      "title": "FundFaster - Investment Management Platform",
+      "description": "Designed and implemented a team-based savings and investment management platform with real-time tracking and collaborative financial planning tools.",
+      "image": "/projects/fund-faster-shot-1.png",
+      "url": "#",
+      "category": "business-saas",
+      "featured": false,
+      "status": "published",
+      "technologies": [
+        "Investment",
+        "Real-time Tracking",
+        "Collaborative Tools",
+        "Financial Planning"
+      ],
+      "year": "2024"
+    },
+    {
+      "id": "bdwatch",
+      "title": "bdwatch.live - Community Accountability Platform",
+      "description": "Led development of a community-driven, map-based accountability platform promoting public transparency and safety reporting.",
+      "image": "/projects/bdwatch-shot-1.png",
+      "url": "https://bdwatch.live/",
+      "badge": "NEW",
+      "category": "ecommerce-community",
+      "featured": false,
+      "status": "draft",
+      "technologies": [
+        "Community Platform",
+        "Maps",
+        "Transparency",
+        "Safety Reporting"
+      ],
+      "year": "2024"
+    },
+    {
+      "id": "fantasy-sniper",
+      "title": "Fantasy Sniper - Sports Community Platform",
+      "description": "A community where fans connect with their team, compete with other fans and earn rewards for demonstrating fan skill.",
+      "image": "/projects/sniper-shot-1.png",
+      "url": "https://sniper-git-wd-61-final-retouch-compeletion-klwebco-auth.vercel.app/",
+      "badge": "",
+      "category": "ecommerce-community",
+      "featured": false,
+      "status": "draft",
+      "technologies": ["Sports", "Community", "Gamification", "Rewards"],
+      "year": "2023"
+    },
+    {
+      "id": "nicole-dennis-benn",
+      "title": "Nicole Dennis-Benn - NY Times Bestselling Author",
+      "description": "The website for Nicole Dennis-Benn, NY Times Bestselling Author, serves as an online platform to showcase her literary works, share her biography, connect with readers, and provide updates on her latest publications and events.",
+      "image": "/projects/nicole-shot-1.png",
+      "url": "https://www.nicoledennisbenn.com/",
+      "badge": "Custom CMS",
+      "category": "client-websites",
+      "featured": false,
+      "status": "published",
+      "technologies": ["Custom CMS", "Author Website", "Content Management"],
+      "year": "2023"
+    },
+    {
+      "id": "morning-dew-therapy",
+      "title": "Morning Dew Therapy",
+      "description": "A website for therapeutic services, offering information, resources, and a platform for clients to connect with mental health professionals.",
+      "image": "/projects/morning-shot-1.png",
+      "url": "https://morningdewtherapy.com/",
+      "badge": "Custom CMS",
+      "category": "client-websites",
+      "featured": false,
+      "status": "published",
+      "technologies": ["Therapy Website", "Custom CMS", "Healthcare"],
+      "year": "2023"
+    },
+    {
+      "id": "klwebco",
+      "title": "KLwebco.com",
+      "description": "Your destination for cutting-edge software solutions. Explore our portfolio, services, and let's transform ideas into digital realities.",
+      "image": "/projects/klwebco-shot-1.png",
+      "url": "https://klwebco.com/",
+      "badge": "Custom CMS",
+      "category": "client-websites",
+      "featured": false,
+      "status": "published",
+      "technologies": ["Company Website", "Custom CMS", "Portfolio"],
+      "year": "2023"
+    },
+    {
+      "id": "fhyf-community",
+      "title": "FHYF Community",
+      "description": "Unveil fashion at its best. Shop our garment collection or explore our portfolio for a glimpse into our creative world.",
+      "image": "/projects/fhyf-shot-1.png",
+      "url": "https://www.fhyf.org/",
+      "badge": "Custom CMS",
+      "category": "client-websites",
+      "featured": false,
+      "status": "published",
+      "technologies": ["Fashion", "E-commerce", "Custom CMS"],
+      "year": "2023"
+    },
+    {
+      "id": "cryy",
+      "title": "CRYY Website",
+      "description": "CRYY has 10 years of experience in providing quality communication gadgets that are durable, and up-to-date to ensure that business owners get smooth interaction between employees and customers.",
+      "image": "/projects/cryy-shot-1.png",
+      "url": "https://cryy.vercel.app/",
+      "badge": "UI with Next js",
+      "category": "client-websites",
+      "featured": false,
+      "status": "published",
+      "technologies": ["Next.js", "Communication Gadgets", "Business Website"],
+      "year": "2023"
+    }
+  ],
+  "categories": {
+    "business-saas": {
+      "title": "Business & SaaS Platforms",
+      "description": "Comprehensive business applications and software-as-a-service platforms"
+    },
+    "cms-framework": {
+      "title": "CMS & Framework Development",
+      "description": "Content management systems and custom framework development"
+    },
+    "ecommerce-community": {
+      "title": "E-commerce Solutions",
+      "description": "E-commerce solutions and community-driven platforms"
+    },
+    "client-websites": {
+      "title": "Client Websites & Custom Solutions",
+      "description": "Custom websites and solutions for clients across various industries"
+    }
+  }
+}
