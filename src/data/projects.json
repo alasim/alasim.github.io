@@ -1,12 +1,33 @@
 {
   "projects": [
     {
+  "id": "pocket-bondhu",
+  "title": "Pocket Bondhu - Personal Finance Management App",
+  "description": "Designed and developed a full-featured personal finance management app enabling users to track income, expenses, budgets, accounts, transfers, family-linked finances, and savings goals. Pocket Bondhu provides intuitive transaction recording, dynamic budget tracking, account-to-account and family transfers, itemized expense handling, and visual goal progress to help users gain full control over their financial life.",
+  "image": "/projects/pocket-bondhu.png",
+  "url": "https://pocketbondhu.com/",
+  "badge": "NEW",
+  "category": "business-saas",
+  "featured": true,
+  "status": "published",
+  "technologies": [
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "TypeScript",
+    "PWA",
+    "Charting",
+    "Authentication"
+  ],
+  "year": "2025"
+},
+    {
       "id": "manifestare",
       "title": "Manifestare - Comprehensive Business Suite",
       "description": "Architected and built from scratch a comprehensive business suite for small businesses, featuring CMS, analytics, event management, donations, email campaigns, social media posting, and a form builder. Designed for high performance and scalability to support continuous growth.",
       "image": "/projects/manifestare-shot-1.png",
       "url": "https://app.manifestare.com/",
-      "badge": "NEW",
+      "badge": "FEATURED",
       "category": "business-saas",
       "featured": true,
       "status": "published",
@@ -20,28 +41,6 @@
       ],
       "year": "2024"
     },
-    {
-  "id": "pocket-bondhu",
-  "title": "Pocket Bondhu - Personal Finance Management App",
-  "description": "Designed and developed a full-featured personal finance management app enabling users to track income, expenses, budgets, accounts, transfers, family-linked finances, and savings goals. Pocket Bondhu provides intuitive transaction recording, dynamic budget tracking, account-to-account and family transfers, itemized expense handling, and visual goal progress to help users gain full control over their financial life.",
-  "image": "/projects/pocket-bondhu.png",
-  "url": "https://pocketbondhu.com/",
-  "badge": "FEATURED",
-  "category": "finance-app",
-  "featured": true,
-  "status": "published",
-  "technologies": [
-    "React",
-    "Node.js",
-    "PostgreSQL",
-    "TypeScript",
-    "REST API",
-    "Charting",
-    "Authentication"
-  ],
-  "year": "2025"
-}
-
     {
       "id": "prumote",
       "title": "Prumote - Digital Advertising Platform",
